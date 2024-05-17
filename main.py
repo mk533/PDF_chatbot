@@ -8,7 +8,6 @@ def main():
     raw_text = pdf_processor.extract_text()
     chatbot = Chatbot()
     chatbot.initialize_document_search(raw_text)
-    chatbot.inference("What is the name of the company? push result to slack")
 
 if __name__ == "__main__":
     main()
